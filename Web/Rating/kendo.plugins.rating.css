@@ -1,0 +1,19 @@
+.k-rating
+{
+    color: #25A0DA;
+    font-size: 16px;
+}
+
+.k-rating-star, .k-rating-empty
+{
+    height: 18px;
+    width: 18px;
+    background-image: url("Images/rating.png");
+    background-position: -18px 0;
+    display: inline-block;
+}
+
+.k-rating-empty
+{
+    background-position: 0 0;
+}

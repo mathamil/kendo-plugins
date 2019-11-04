@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        html {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <title></title>
+    <link rel="stylesheet" href="kendo.plugins.rating.css">
+    <script src="https://kendo.cdn.telerik.com/2019.3.1023/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2019.3.1023/js/kendo.core.min.js"></script>
+    <script src="kendo.plugins.rating.js"></script>
+
+</head>
+
+<body>
+    <input id="rating" type="text"/>
+    <script>
+        $(document).ready(function () {
+            $("#rating").kendoRating({
+                value: null
+            });
+        });
+    </script>
+</body>
+
+</html>

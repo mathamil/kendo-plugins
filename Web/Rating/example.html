@@ -8,7 +8,8 @@
             font-family: Arial, Helvetica, sans-serif;
         }
     </style>
-    <title></title>
+    <title>Kendo UI Rating Plugin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="kendo.plugins.rating.css">
     <script src="https://kendo.cdn.telerik.com/2019.3.1023/js/jquery.min.js"></script>
     <script src="https://kendo.cdn.telerik.com/2019.3.1023/js/kendo.core.min.js"></script>
@@ -17,11 +18,13 @@
 </head>
 
 <body>
-    <input id="rating" type="text"/>
+    <input id="rating" type="text" />
     <script>
         $(document).ready(function () {
             $("#rating").kendoRating({
-                value: null
+                itemClass: "fa k-rating-item",
+                selectedClass: "fa-star k-rating-star",
+                emptyClass: "fa-star-o k-rating-empty"
             });
         });
     </script>

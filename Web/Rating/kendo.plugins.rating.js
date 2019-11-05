@@ -75,7 +75,7 @@
                 }
             }
             else {
-                if (value != null) {
+                if (value !== null) {
                     if (isNaN(value)) {
                         value = parseInt(value);
                     }
@@ -142,7 +142,7 @@
             var star = wrapper.find('span[data-value="' + value + '"]');
 
             if (value === null || value === undefined || star.length === 0) {
-                wrapper.find("span").removeClass(options.selectedClass);
+                wrapper.find("span").removeClass(options.selectedClass).addClass(options.emptyClass);
             }
             else {
                 star.prevAll("span").removeClass(options.emptyClass).addClass(options.selectedClass);

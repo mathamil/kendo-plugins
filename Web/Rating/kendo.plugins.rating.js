@@ -19,7 +19,7 @@
             Widget.fn.init.call(that, element, options);
 
             var wrapper = that.element
-                .wrap("<div class='k-rating'/>")
+                .wrap('<div class="k-rating"/>')
                 .parent()
                 .attr("style", that.element.attr("style"));
 
